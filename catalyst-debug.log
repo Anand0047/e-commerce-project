@@ -1,0 +1,23 @@
+[debug] [2024-04-30T11:23:37.481Z] : 
+[debug] [2024-04-30T11:23:37.482Z] : ----------------------------------------------------------------------
+[debug] [2024-04-30T11:23:37.482Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Anandh raj\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2024-04-30T11:23:37.484Z] : CLI Version:  1.17.5
+[debug] [2024-04-30T11:23:37.484Z] : Platform:     win32
+[debug] [2024-04-30T11:23:37.485Z] : Node Version: v20.11.0
+[debug] [2024-04-30T11:23:37.485Z] : Time:         Tue Apr 30 2024 16:53:37 GMT+0530 (India Standard Time)
+[debug] [2024-04-30T11:23:37.485Z] : ----------------------------------------------------------------------
+[debug] [2024-04-30T11:23:37.485Z] : 
+[debug] [2024-04-30T11:23:38.200Z] : > authorizing via signed-in user option
+[debug] [2024-04-30T11:23:38.200Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2024-04-30T11:23:38.210Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/7165000000005071 
+
+[debug] [2024-04-30T11:23:38.460Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 30 Apr 2024 11:23:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=14831169-34fb-4ed3-949e-9f97d42f7c79;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=14831169-34fb-4ed3-949e-9f97d42f7c79;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-04-30T11:23:38.463Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/7165000000005071/environment 
+
+[debug] [2024-04-30T11:23:38.565Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 30 Apr 2024 11:23:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=5c8bc6dc-b132-4855-8f16-a63b9f924ccf;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5c8bc6dc-b132-4855-8f16-a63b9f924ccf;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-04-30T11:23:40.620Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/7165000000005071/webapp 
+
