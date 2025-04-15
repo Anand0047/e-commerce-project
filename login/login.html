@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=\, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+	<a class="a" href="../index.html">click here to enter into STRIX Homepage</a>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<span>or use your email for registration</span>
+			<input type="text" name="name" placeholder="Name" />
+			<input type="email" name="email" placeholder="Email" />
+			<input type="password" name="password" placeholder="Password" />
+
+			<button>  Sign Up </button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<span>or use your account</span>
+			<input type="email" name="email" placeholder="Email" />
+			<input type="password" name="password" placeholder="Password" />
+			<p> Forgot your password?</p>
+			<button  ><a style="text-decoration: none; color:white;" href="../index.html"> Sign In</a></button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
+
+
+
+
+// Get the sign-up form
+const signUpForm = document.querySelector('.sign-up-container form');
+
+// Function to handle form submission
+function handleSignUp(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get input values
+    const name = signUpForm.querySelector('input[name="name"]').value;
+    const email = signUpForm.querySelector('input[name="email"]').value;
+    const password = signUpForm.querySelector('input[name="password"]').value;
+
+    // Store data in local storage
+    const userData = {
+        name: name,
+        email: email,
+        password: password
+    };
+    localStorage.setItem('userData', JSON.stringify(userData));
+
+    // Optionally, you can clear the form fields after submission
+    signUpForm.reset();
+}
+
+// Add event listener to the form for submission
+signUpForm.addEventListener('submit', handleSignUp);
+
+</script>
+<script src="index.js"></script>
+</body>
+</html>

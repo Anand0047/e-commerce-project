@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script src="./login.js"></script>
+</head>
+<body>
+    <div id="welcome-message">
+        <!-- User's name will be displayed here -->
+    </div>
+
+    <script>
+        // Retrieve user's name from localStorage and display it
+        const formData = JSON.parse(localStorage.getItem('formData'));
+        if (formData && formData.length > 0) {
+            const user = formData[formData.length - 1]; // Get the last signed up user
+            const welcomeDiv = document.getElementById('welcome-message');
+            welcomeDiv.textContent = `Welcome, ${user.fname}!`; // Display user's name
+        }
+    </script>
+</body>
+</html>
