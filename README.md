@@ -24,7 +24,7 @@ This is a fully functional **e-commerce frontend** built using **HTML, CSS, and 
 
 ## 🖥️ Live Preview
 
-(https://anand-dev-strix-project.netlify.app/)
+https://anand0047.github.io/e-commerce-project/
 
 ---
 
